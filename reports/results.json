@@ -1,0 +1,475 @@
+{
+  "events": 1231,
+  "input_sha256": "6bfe2b8727284cd397cb79ea7f1598371db4f9e84118a7ce0b11df762515c87c",
+  "results": {
+    "services": [
+      {
+        "service": "vpn",
+        "events": 1225,
+        "successes": 1158,
+        "failures": 67,
+        "failure_pct": 5.47,
+        "users": 137,
+        "sources": 203
+      },
+      {
+        "service": "backup-console",
+        "events": 6,
+        "successes": 0,
+        "failures": 6,
+        "failure_pct": 100.0,
+        "users": 1,
+        "sources": 1
+      }
+    ],
+    "sources": [
+      {
+        "source_ip": "192.0.2.90",
+        "service": "vpn",
+        "failures": 8,
+        "affected_users": 8,
+        "first_failure": "2026-09-15T18:00:00.000000Z",
+        "last_failure": "2026-09-15T20:20:00.000000Z"
+      },
+      {
+        "source_ip": "198.51.100.23",
+        "service": "vpn",
+        "failures": 8,
+        "affected_users": 8,
+        "first_failure": "2026-09-15T16:00:00.000000Z",
+        "last_failure": "2026-09-15T16:07:00.000000Z"
+      },
+      {
+        "source_ip": "203.0.113.42",
+        "service": "vpn",
+        "failures": 8,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T14:00:00.000000Z",
+        "last_failure": "2026-09-15T14:07:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.250",
+        "service": "backup-console",
+        "failures": 6,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T17:00:00.000000Z",
+        "last_failure": "2026-09-15T17:05:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.125",
+        "service": "vpn",
+        "failures": 2,
+        "affected_users": 2,
+        "first_failure": "2026-09-15T01:14:24.000000Z",
+        "last_failure": "2026-09-15T03:14:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.169",
+        "service": "vpn",
+        "failures": 2,
+        "affected_users": 2,
+        "first_failure": "2026-09-15T03:40:48.000000Z",
+        "last_failure": "2026-09-15T11:40:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.101",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T01:00:00.000000Z",
+        "last_failure": "2026-09-15T01:00:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.105",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:02:24.000000Z",
+        "last_failure": "2026-09-15T05:02:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.129",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:16:48.000000Z",
+        "last_failure": "2026-09-15T05:16:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.13",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T00:07:12.000000Z",
+        "last_failure": "2026-09-15T00:07:12.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.157",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T09:33:36.000000Z",
+        "last_failure": "2026-09-15T09:33:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.0.85",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T06:50:24.000000Z",
+        "last_failure": "2026-09-15T06:50:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.10",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T00:05:24.000000Z",
+        "last_failure": "2026-09-15T00:05:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.102",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:00:36.000000Z",
+        "last_failure": "2026-09-15T05:00:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.126",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T11:15:00.000000Z",
+        "last_failure": "2026-09-15T11:15:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.134",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T11:19:48.000000Z",
+        "last_failure": "2026-09-15T11:19:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.14",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T10:07:48.000000Z",
+        "last_failure": "2026-09-15T10:07:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.186",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T11:51:00.000000Z",
+        "last_failure": "2026-09-15T11:51:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.190",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:53:24.000000Z",
+        "last_failure": "2026-09-15T05:53:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.194",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T11:55:48.000000Z",
+        "last_failure": "2026-09-15T11:55:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.2",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T00:00:36.000000Z",
+        "last_failure": "2026-09-15T00:00:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.34",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T10:19:48.000000Z",
+        "last_failure": "2026-09-15T10:19:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.38",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T06:22:12.000000Z",
+        "last_failure": "2026-09-15T06:22:12.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.70",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T02:41:24.000000Z",
+        "last_failure": "2026-09-15T02:41:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.82",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T04:48:36.000000Z",
+        "last_failure": "2026-09-15T04:48:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.94",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T04:55:48.000000Z",
+        "last_failure": "2026-09-15T04:55:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.1.98",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T02:58:12.000000Z",
+        "last_failure": "2026-09-15T02:58:12.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.119",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:10:48.000000Z",
+        "last_failure": "2026-09-15T05:10:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.127",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T01:15:36.000000Z",
+        "last_failure": "2026-09-15T01:15:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.143",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T03:25:12.000000Z",
+        "last_failure": "2026-09-15T03:25:12.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.167",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T09:39:36.000000Z",
+        "last_failure": "2026-09-15T09:39:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.175",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T11:44:24.000000Z",
+        "last_failure": "2026-09-15T11:44:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.195",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T03:56:24.000000Z",
+        "last_failure": "2026-09-15T03:56:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.199",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:58:48.000000Z",
+        "last_failure": "2026-09-15T05:58:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.27",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T10:15:36.000000Z",
+        "last_failure": "2026-09-15T10:15:36.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.35",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T10:20:24.000000Z",
+        "last_failure": "2026-09-15T10:20:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.83",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T08:49:12.000000Z",
+        "last_failure": "2026-09-15T08:49:12.000000Z"
+      },
+      {
+        "source_ip": "10.20.2.91",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T02:54:00.000000Z",
+        "last_failure": "2026-09-15T02:54:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.140",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T11:23:24.000000Z",
+        "last_failure": "2026-09-15T11:23:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.144",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T05:25:48.000000Z",
+        "last_failure": "2026-09-15T05:25:48.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.16",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T04:09:00.000000Z",
+        "last_failure": "2026-09-15T04:09:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.196",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T09:57:00.000000Z",
+        "last_failure": "2026-09-15T09:57:00.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.20",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T00:11:24.000000Z",
+        "last_failure": "2026-09-15T00:11:24.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.28",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T04:16:12.000000Z",
+        "last_failure": "2026-09-15T04:16:12.000000Z"
+      },
+      {
+        "source_ip": "10.20.3.68",
+        "service": "vpn",
+        "failures": 1,
+        "affected_users": 1,
+        "first_failure": "2026-09-15T00:40:12.000000Z",
+        "last_failure": "2026-09-15T00:40:12.000000Z"
+      }
+    ],
+    "failure_bursts": [
+      {
+        "event_id": "EVT-01205",
+        "timestamp": "2026-09-15T14:04:00.000000Z",
+        "user": "analyst_demo",
+        "source_ip": "203.0.113.42",
+        "service": "vpn",
+        "failures_in_window": 5
+      },
+      {
+        "event_id": "EVT-01206",
+        "timestamp": "2026-09-15T14:05:00.000000Z",
+        "user": "analyst_demo",
+        "source_ip": "203.0.113.42",
+        "service": "vpn",
+        "failures_in_window": 6
+      },
+      {
+        "event_id": "EVT-01207",
+        "timestamp": "2026-09-15T14:06:00.000000Z",
+        "user": "analyst_demo",
+        "source_ip": "203.0.113.42",
+        "service": "vpn",
+        "failures_in_window": 7
+      },
+      {
+        "event_id": "EVT-01208",
+        "timestamp": "2026-09-15T14:07:00.000000Z",
+        "user": "analyst_demo",
+        "source_ip": "203.0.113.42",
+        "service": "vpn",
+        "failures_in_window": 8
+      },
+      {
+        "event_id": "EVT-01222",
+        "timestamp": "2026-09-15T17:04:00.000000Z",
+        "user": "svc_backup_demo",
+        "source_ip": "10.20.0.250",
+        "service": "backup-console",
+        "failures_in_window": 5
+      },
+      {
+        "event_id": "EVT-01223",
+        "timestamp": "2026-09-15T17:05:00.000000Z",
+        "user": "svc_backup_demo",
+        "source_ip": "10.20.0.250",
+        "service": "backup-console",
+        "failures_in_window": 6
+      }
+    ],
+    "multiple_users": [
+      {
+        "event_id": "EVT-01215",
+        "timestamp": "2026-09-15T16:05:00.000000Z",
+        "source_ip": "198.51.100.23",
+        "service": "vpn",
+        "users_in_window": 6,
+        "failures_in_window": 6
+      },
+      {
+        "event_id": "EVT-01216",
+        "timestamp": "2026-09-15T16:06:00.000000Z",
+        "source_ip": "198.51.100.23",
+        "service": "vpn",
+        "users_in_window": 7,
+        "failures_in_window": 7
+      },
+      {
+        "event_id": "EVT-01217",
+        "timestamp": "2026-09-15T16:07:00.000000Z",
+        "source_ip": "198.51.100.23",
+        "service": "vpn",
+        "users_in_window": 8,
+        "failures_in_window": 8
+      }
+    ],
+    "success_after_failures": [
+      {
+        "success_event_id": "EVT-01209",
+        "success_at": "2026-09-15T14:08:00.000000Z",
+        "user": "analyst_demo",
+        "source_ip": "203.0.113.42",
+        "service": "vpn",
+        "preceding_failures": 8,
+        "first_failure": "2026-09-15T14:00:00.000000Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+event_id,timestamp,source_ip,service,users_in_window,failures_in_window
+EVT-01215,2026-09-15T16:05:00.000000Z,198.51.100.23,vpn,6,6
+EVT-01216,2026-09-15T16:06:00.000000Z,198.51.100.23,vpn,7,7
+EVT-01217,2026-09-15T16:07:00.000000Z,198.51.100.23,vpn,8,8

@@ -1,0 +1,2 @@
+success_event_id,success_at,user,source_ip,service,preceding_failures,first_failure
+EVT-01209,2026-09-15T14:08:00.000000Z,analyst_demo,203.0.113.42,vpn,8,2026-09-15T14:00:00.000000Z

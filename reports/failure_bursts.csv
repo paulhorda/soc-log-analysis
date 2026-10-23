@@ -1,0 +1,7 @@
+event_id,timestamp,user,source_ip,service,failures_in_window
+EVT-01205,2026-09-15T14:04:00.000000Z,analyst_demo,203.0.113.42,vpn,5
+EVT-01206,2026-09-15T14:05:00.000000Z,analyst_demo,203.0.113.42,vpn,6
+EVT-01207,2026-09-15T14:06:00.000000Z,analyst_demo,203.0.113.42,vpn,7
+EVT-01208,2026-09-15T14:07:00.000000Z,analyst_demo,203.0.113.42,vpn,8
+EVT-01222,2026-09-15T17:04:00.000000Z,svc_backup_demo,10.20.0.250,backup-console,5
+EVT-01223,2026-09-15T17:05:00.000000Z,svc_backup_demo,10.20.0.250,backup-console,6

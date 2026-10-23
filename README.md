@@ -1,64 +1,43 @@
-# Retail Analytics Lab
+# Authentication log analysis
 
-**SQL · Python · SQLite · Conversion · Revenue · Cohort retention**
+SQL queries for investigating failed logins and successful logins that follow them. Python loads a JSONL file into SQLite and saves the query results as CSV.
 
-A reproducible analytics case study: turn six related CSV tables into decision-ready metrics, a dashboard and a short business report.
+The sample contains 1,231 generated events. It is shared with [SOC Alert Triage Lab](https://github.com/paulhorda/soc-alert-triage-lab), so the two approaches can be compared.
 
-> Portfolio lab using explicitly synthetic data. No real customers, commercial outcomes or employment claims.
+## Queries
 
-![Retail analytics dashboard](reports/dashboard.svg)
+| File | Question |
+|---|---|
+| [01_services.sql](sql/01_services.sql) | How much activity does each service have? |
+| [02_sources.sql](sql/02_sources.sql) | Which sources have the most failures, and how many accounts are involved? |
+| [03_failure_bursts.sql](sql/03_failure_bursts.sql) | Are there five failures for one account and source within ten minutes? |
+| [04_multiple_users.sql](sql/04_multiple_users.sql) | Does one source fail against six different accounts within ten minutes? |
+| [05_success_after_failures.sql](sql/05_success_after_failures.sql) | Does a successful login follow at least five failures within fifteen minutes? |
 
-**[Read the findings](reports/findings.md)** · **[Explore the SQL](sql/)** · **[Metric definitions](docs/metrics.md)**
+Each query keeps services separate. Window queries return every qualifying window; they do not group matches into incidents or apply an alert cooldown.
 
-## Business questions
+## Run
 
-- Which channels bring purchasing visits, and which bring revenue?
-- What changes between July and September after accounting for cancellations and refunds?
-- Which product categories deserve a closer refund review?
-- How many customers purchase again after their first observed purchase?
-
-## Run locally
-
-Python 3.10+ with the standard library; no package installation, account or API key needed.
+Python 3.10 or later. No extra packages.
 
 ```bash
-python3 src/generate_data.py
+python3 src/generate_logs.py
 python3 src/analyze.py
 python3 -m unittest discover -s tests -v
 ```
 
-The generator uses seed `42`. Analysis loads an in-memory SQLite database and regenerates the committed report, chart, quality results and CSV tables in `reports/`.
+[Read the results](reports/review.md) or open the CSV files in `reports/`.
 
-## What this demonstrates
+For another file with the same fields:
 
-| Work | Evidence |
-|---|---|
-| Relational modeling and constraints | [Six-table schema and reporting views](sql/schema.sql) |
-| CTEs, joins, conditional denominators | [Channel conversion](sql/02_channels.sql) |
-| Window functions | [Month-over-month revenue with LAG](sql/03_monthly.sql) |
-| Cohort analysis | [Observed first-purchase cohorts](sql/04_cohorts.sql) |
-| Data quality and repeatable reporting | [Analysis pipeline](src/analyze.py) |
-| Metric correctness | [Tests for duplicates, refunds, cancellations and cohort boundaries](tests/test_analytics.py) |
-| Analytical communication | [Findings, caveats and next decisions](reports/findings.md) |
-
-```mermaid
-flowchart LR
-    A[Seeded synthetic generator] --> B[Six CSV tables]
-    B --> C[SQLite constraints and quality checks]
-    C --> D[SQL reporting views and queries]
-    D --> E[CSV + JSON + SVG + decision brief]
+```bash
+python3 src/analyze.py --input events.jsonl --output local-results
 ```
 
-## Important choices
+Required fields: `event_id`, `timestamp` (UTC, ending in `Z`), `user`, `source_ip`, `outcome` (`success` or `failure`) and `service`. Duplicate IDs and invalid records fail the import. IPs and timestamps are normalized before grouping.
 
-**Conversion means unique purchasing sessions / all sessions.** One session can contain multiple orders; orders/visits would answer a different question.
+## Sample notes
 
-**Refunds are aggregated before joins.** Multiple refund transactions must not duplicate the original line value. Money stays in integer cents until presentation.
+There is a burst followed by a success, failures across several accounts, a stale service credential, and a slow sequence that the ten-minute queries miss. [Notes and limitations](docs/notes.md) explain each case.
 
-**Future retention is unobserved.** The cohort table includes zero activity in observed months, while omitting months after the dataset ends.
-
-## Scope
-
-Fictional EUR retail data from July 1 through September 30, 2026. The generator deliberately gives email a recurring audience, Electronics a higher refund rate and paid search a September conversion decline. Findings are descriptive exercises, not causal evidence. Marketing spend, profit, anonymous visitors, tax and refund timestamps are absent.
-
-See [the walkthrough](docs/walkthrough.md) for how to inspect and extend the project. Created with AI assistance; code and assumptions are available for review.
+The queries provide leads for an investigation. The sample has no MFA, device or session activity data to establish whether a login was unauthorized.

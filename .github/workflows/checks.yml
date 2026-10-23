@@ -19,6 +19,6 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Regenerate sample and reports
         run: |
-          python src/generate_data.py
+          python src/generate_logs.py
           python src/analyze.py
           git diff --exit-code -- data reports
