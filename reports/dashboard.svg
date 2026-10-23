@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="650" viewBox="0 0 1080 650" role="img" aria-labelledby="title desc">
+<title id="title">Retail analytics: synthetic sample</title>
+<desc id="desc">Revenue and purchasing-session conversion by channel, with monthly net revenue. Source tables accompany this chart.</desc>
+<rect width="1080" height="650" rx="20" fill="#0b1220"/>
+<g font-family="Arial, sans-serif" fill="#e7edf5">
+<text x="40" y="49" font-size="14" fill="#5eead4">DATA ANALYTICS / SQL + PYTHON</text>
+<text x="40" y="90" font-size="30" font-weight="700">From visits to net revenue</text>
+<text x="40" y="117" font-size="14" fill="#a8b8cf">Synthetic retail data · July–September 2026 · EUR</text>
+<rect x="40" y="148" width="320" height="102" rx="10" fill="#162236"/>
+<text x="60" y="179" font-size="12" fill="#a8b8cf">NET REVENUE</text>
+<text x="60" y="220" font-size="30" font-weight="700">€295,955</text>
+<rect x="380" y="148" width="320" height="102" rx="10" fill="#162236"/>
+<text x="400" y="179" font-size="12" fill="#a8b8cf">SESSION CONVERSION</text>
+<text x="400" y="220" font-size="30" font-weight="700">15.45%</text>
+<rect x="720" y="148" width="320" height="102" rx="10" fill="#162236"/>
+<text x="740" y="179" font-size="12" fill="#a8b8cf">COMPLETED ORDERS</text>
+<text x="740" y="220" font-size="30" font-weight="700">1,547</text>
+<text x="40" y="295" font-size="19" font-weight="700">Channel conversion</text>
+<text x="585" y="295" font-size="19" font-weight="700">Monthly net revenue</text>
+<text x="40" y="332" font-size="14">organic</text>
+<rect x="155" y="317" width="155.3" height="22" rx="4" fill="#2dd4bf"/>
+<text x="430" y="332" font-size="14">16.45%</text>
+<text x="40" y="387" font-size="14">email</text>
+<rect x="155" y="372" width="260.0" height="22" rx="4" fill="#2dd4bf"/>
+<text x="430" y="387" font-size="14">27.54%</text>
+<text x="40" y="442" font-size="14">paid_search</text>
+<rect x="155" y="427" width="84.7" height="22" rx="4" fill="#2dd4bf"/>
+<text x="430" y="442" font-size="14">8.97%</text>
+<text x="40" y="497" font-size="14">direct</text>
+<rect x="155" y="482" width="168.3" height="22" rx="4" fill="#2dd4bf"/>
+<text x="430" y="497" font-size="14">17.83%</text>
+<rect x="600" y="356.4" width="90" height="153.6" rx="5" fill="#60a5fa"/>
+<text x="645" y="344.4" text-anchor="middle" font-size="13">€99,532</text>
+<text x="645" y="538" text-anchor="middle" font-size="13">2026-07</text>
+<rect x="745" y="350.0" width="90" height="160.0" rx="5" fill="#60a5fa"/>
+<text x="790" y="338.0" text-anchor="middle" font-size="13">€103,710</text>
+<text x="790" y="538" text-anchor="middle" font-size="13">2026-08</text>
+<rect x="890" y="367.0" width="90" height="143.0" rx="5" fill="#60a5fa"/>
+<text x="935" y="355.0" text-anchor="middle" font-size="13">€92,713</text>
+<text x="935" y="538" text-anchor="middle" font-size="13">2026-09</text>
+<text x="40" y="590" font-size="14" fill="#a8b8cf">Conversion = unique purchasing sessions / all sessions. Multiple orders do not inflate it.</text>
+<text x="40" y="617" font-size="13" fill="#a8b8cf">Fictional scenario. Channel differences are descriptive; no causal or ROI claims.</text>
+</g></svg>

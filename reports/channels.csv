@@ -1,0 +1,5 @@
+channel,sessions,orders,purchasing_sessions,conversion_pct,net_cents,revenue_per_session_cents
+organic,3228,561,531,16.45,11013000,3411.71
+email,1162,352,320,27.54,6746800,5806.2
+paid_search,3267,315,293,8.97,5918200,1811.51
+direct,1643,319,293,17.83,5917500,3601.64

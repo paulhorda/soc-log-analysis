@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "orders_without_items",
+    "refunds_above_item_value",
+    "refunds_on_cancelled_orders",
+    "invalid_timestamps",
+    "foreign_keys",
+    "primary_keys",
+    "positive_amounts",
+    "valid_statuses"
+  ],
+  "table_rows": {
+    "customers": 1200,
+    "products": 24,
+    "sessions": 9300,
+    "orders": 1632,
+    "order_items": 3288,
+    "refunds": 258
+  }
+}
